@@ -35,7 +35,7 @@
             >Web<span class="logo-span">Studio</span></a
           >
           <ul class="list page-navigation">
-            <li><a class="link" href="./index.html">Studio</a></li>
+            <li><a class="link is-active" href="./index.html">Studio</a></li>
             <li><a class="link" href="./portfolio.html">Portfolio</a></li>
             <li><a class="link" href="">Contacts</a></li>
           </ul>
@@ -62,7 +62,9 @@
       <section class="section heading">
         <div class="container heading-layout">
           <h1 class="main-heading">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button modal-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -376,7 +378,7 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <div class="container footer-layout">
+        <div class="footer-layout">
           <a class="logo link" href="./index.html"
             >Web<span class="logo-span-two">Studio</span></a
           >
@@ -386,7 +388,7 @@
           </p>
         </div>
 
-        <div class="container footer-social-media">
+        <div class="footer-social-media">
           <p class="paragraph social-paragraph">Social media</p>
           <ul class="footer-socials">
             <li class="footer-socials-item">
@@ -421,5 +423,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
