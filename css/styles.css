@@ -381,6 +381,10 @@ ol {
   border-top: none;
 }
 
+.a-card .paragraph {
+  font-weight: 400;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -618,4 +622,20 @@ ol {
 
 .card:focus .card-box-description {
   transform: translateY(0%);
+}
+
+.is-active {
+  color: var(--pressed-state-color);
+  position: relative;
+}
+
+.is-active::after {
+  background-color: var(--pressed-state-color);
+  border-radius: 2px;
+  bottom: -1px;
+  content: '';
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
