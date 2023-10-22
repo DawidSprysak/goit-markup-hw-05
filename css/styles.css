@@ -498,8 +498,8 @@ ol {
 
 .socials-icon {
   fill: var(--light-color);
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
 }
 
 .customers-layout .customers-list {
@@ -672,7 +672,7 @@ ol {
   position: absolute;
   background-color: var(--pressed-state-color);
   height: 4px;
-  bottom: -1px;
+  bottom: -4px;
   width: 100%;
   left: 0;
   border-radius: 2px;
